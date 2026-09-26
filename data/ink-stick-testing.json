@@ -1,45 +1,177 @@
 {
   "items": [
     {
+      "id": "seed-IS-001",
       "code": "IS-001",
       "smokeSource": "黄山松烟",
       "glueRatio": "7.5%",
       "ageYears": 8,
       "storage": "恒湿柜B",
       "status": "已试磨",
+      "createdAt": "2026-09-08T09:00:00.000Z",
+      "tests": [
+        {
+          "round": 1,
+          "at": "2026-09-09T02:30:00.000Z",
+          "baseRound": null,
+          "paper": "宣纸",
+          "water": "20滴",
+          "speed": "快",
+          "colorLayer": "乌黑发亮，层次分明",
+          "sediment": "少",
+          "sedimentLevel": 1,
+          "sedimentDelta": null,
+          "score": 86,
+          "grade": "优",
+          "message": "首次试磨评分86，沉淀无历史基准，记为已试磨"
+        }
+      ],
       "logs": [
         {
-          "at": "2026-06-11",
-          "step": "试磨",
-          "note": "宣纸20滴水，出墨快，评分86",
-          "score": 86
+          "at": "2026-09-08T09:00:00.000Z",
+          "step": "建档",
+          "note": "创建墨锭"
+        },
+        {
+          "at": "2026-09-09T02:30:00.000Z",
+          "step": "第1轮试磨",
+          "note": "宣纸，20滴，出墨快，沉淀少，评分86（优）-> 已试磨"
         }
       ]
     },
     {
+      "id": "seed-IS-002",
       "code": "IS-002",
       "smokeSource": "桐油烟",
       "glueRatio": "8%",
       "ageYears": 3,
       "storage": "试样盒C",
-      "status": "重点观察",
-      "logs": [
-        {
-          "at": "2026-06-21T03:50:28.907Z",
-          "step": "试磨",
-          "note": "棉连纸，评分79",
-          "score": 79
-        }
-      ],
+      "status": "待复磨",
+      "createdAt": "2026-09-10T09:00:00.000Z",
       "tests": [
         {
-          "at": "2026-06-21T03:50:28.907Z",
+          "round": 1,
+          "at": "2026-09-16T02:30:00.000Z",
+          "baseRound": null,
           "paper": "棉连纸",
           "water": "18滴",
           "speed": "中",
-          "colorLayer": "偏暖",
+          "colorLayer": "偏暖，层次尚可",
+          "sediment": "较多",
+          "sedimentLevel": 2,
+          "sedimentDelta": null,
+          "score": 72,
+          "grade": "差",
+          "message": "首次试磨评分72，进入待复磨队列"
+        },
+        {
+          "round": 2,
+          "at": "2026-09-20T02:30:00.000Z",
+          "baseRound": 1,
+          "paper": "棉连纸",
+          "water": "16滴",
+          "speed": "中",
+          "colorLayer": "偏暖，层次拉开",
           "sediment": "少",
-          "score": 79
+          "sedimentLevel": 1,
+          "sedimentDelta": "less",
+          "score": 78,
+          "grade": "良",
+          "message": "沉淀较第1轮减少，但评分78未达85，继续待复磨"
+        }
+      ],
+      "logs": [
+        {
+          "at": "2026-09-10T09:00:00.000Z",
+          "step": "建档",
+          "note": "创建墨锭"
+        },
+        {
+          "at": "2026-09-16T02:30:00.000Z",
+          "step": "第1轮试磨",
+          "note": "棉连纸，18滴，出墨中，沉淀较多，评分72（差）-> 待复磨"
+        },
+        {
+          "at": "2026-09-20T02:30:00.000Z",
+          "step": "第2轮试磨",
+          "note": "棉连纸，16滴，出墨中，沉淀少，评分78（良）-> 待复磨"
+        }
+      ]
+    },
+    {
+      "id": "seed-IS-003",
+      "code": "IS-003",
+      "smokeSource": "黄山松烟",
+      "glueRatio": "9%",
+      "ageYears": 1,
+      "storage": "试样盒A",
+      "status": "重点观察",
+      "createdAt": "2026-09-12T09:00:00.000Z",
+      "tests": [
+        {
+          "round": 1,
+          "at": "2026-09-17T02:30:00.000Z",
+          "baseRound": null,
+          "paper": "毛边纸",
+          "water": "24滴",
+          "speed": "慢",
+          "colorLayer": "发灰，层次模糊",
+          "sediment": "多",
+          "sedimentLevel": 3,
+          "sedimentDelta": null,
+          "score": 70,
+          "grade": "差",
+          "message": "首次试磨评分70，进入待复磨队列"
+        },
+        {
+          "round": 2,
+          "at": "2026-09-21T02:30:00.000Z",
+          "baseRound": 1,
+          "paper": "毛边纸",
+          "water": "22滴",
+          "speed": "慢",
+          "colorLayer": "发灰略改善",
+          "sediment": "较多",
+          "sedimentLevel": 2,
+          "sedimentDelta": "less",
+          "score": 68,
+          "grade": "差",
+          "message": "连续两轮评分低于75（70、68），转重点观察"
+        }
+      ],
+      "logs": [
+        {
+          "at": "2026-09-12T09:00:00.000Z",
+          "step": "建档",
+          "note": "创建墨锭"
+        },
+        {
+          "at": "2026-09-17T02:30:00.000Z",
+          "step": "第1轮试磨",
+          "note": "毛边纸，24滴，出墨慢，沉淀多，评分70（差）-> 待复磨"
+        },
+        {
+          "at": "2026-09-21T02:30:00.000Z",
+          "step": "第2轮试磨",
+          "note": "毛边纸，22滴，出墨慢，沉淀较多，评分68（差）-> 重点观察"
+        }
+      ]
+    },
+    {
+      "id": "seed-IS-004",
+      "code": "IS-004",
+      "smokeSource": "漆烟",
+      "glueRatio": "7%",
+      "ageYears": 5,
+      "storage": "恒湿柜A",
+      "status": "待试磨",
+      "createdAt": "2026-09-15T09:00:00.000Z",
+      "tests": [],
+      "logs": [
+        {
+          "at": "2026-09-15T09:00:00.000Z",
+          "step": "建档",
+          "note": "创建墨锭"
         }
       ]
     }
