@@ -1,47 +1,211 @@
 {
   "items": [
     {
+      "id": "IS-001",
       "code": "IS-001",
       "smokeSource": "黄山松烟",
       "glueRatio": "7.5%",
       "ageYears": 8,
       "storage": "恒湿柜B",
       "status": "已试磨",
+      "createdAt": "2026-05-02T09:00:00.000Z",
       "logs": [
         {
-          "at": "2026-06-11",
+          "at": "2026-05-02T09:00:00.000Z",
+          "step": "建档",
+          "note": "墨锭建档，状态：待试磨"
+        },
+        {
+          "at": "2026-06-05T10:00:00.000Z",
           "step": "试磨",
-          "note": "宣纸20滴水，出墨快，评分86",
-          "score": 86
+          "note": "第1次：宣纸22滴，沉淀多，评分80 → 待复磨（评分未达85）",
+          "score": 80
+        },
+        {
+          "at": "2026-06-20T10:00:00.000Z",
+          "step": "试磨",
+          "note": "第2次：棉连纸20滴，沉淀少（较第1次减少），评分88 → 已试磨（评分达标且沉淀减少）",
+          "score": 88
+        }
+      ],
+      "tests": [
+        {
+          "seq": 1,
+          "at": "2026-06-05T10:00:00.000Z",
+          "paper": "宣纸",
+          "water": "22滴",
+          "speed": "中",
+          "colorLayer": "四层，偏灰",
+          "sediment": "多",
+          "sedimentLevel": 3,
+          "score": 80,
+          "baselineSeq": null,
+          "sedimentReduced": null,
+          "consecutiveLow": false,
+          "result": "待复磨",
+          "reason": "首次试磨评分未达85，进入待复磨队列"
+        },
+        {
+          "seq": 2,
+          "at": "2026-06-20T10:00:00.000Z",
+          "paper": "棉连纸",
+          "water": "20滴",
+          "speed": "快",
+          "colorLayer": "五层，乌黑发亮",
+          "sediment": "少",
+          "sedimentLevel": 1,
+          "score": 88,
+          "baselineSeq": 1,
+          "sedimentReduced": true,
+          "consecutiveLow": false,
+          "result": "已试磨",
+          "reason": "评分达到85且沉淀减少，记为已试磨"
         }
       ]
     },
     {
+      "id": "IS-002",
       "code": "IS-002",
       "smokeSource": "桐油烟",
       "glueRatio": "8%",
       "ageYears": 3,
       "storage": "试样盒C",
-      "status": "重点观察",
+      "status": "待复磨",
+      "createdAt": "2026-05-10T09:00:00.000Z",
       "logs": [
         {
-          "at": "2026-06-21T03:50:28.907Z",
+          "at": "2026-05-10T09:00:00.000Z",
+          "step": "建档",
+          "note": "墨锭建档，状态：待试磨"
+        },
+        {
+          "at": "2026-06-08T10:00:00.000Z",
           "step": "试磨",
-          "note": "棉连纸，评分79",
-          "score": 79
+          "note": "第1次：宣纸20滴，沉淀中，评分82 → 待复磨（评分未达85）",
+          "score": 82
+        },
+        {
+          "at": "2026-06-22T10:00:00.000Z",
+          "step": "试磨",
+          "note": "第2次：净皮纸18滴，沉淀中（与第1次持平），评分83 → 待复磨（沉淀没有减少）",
+          "score": 83
         }
       ],
       "tests": [
         {
-          "at": "2026-06-21T03:50:28.907Z",
-          "paper": "棉连纸",
+          "seq": 1,
+          "at": "2026-06-08T10:00:00.000Z",
+          "paper": "宣纸",
+          "water": "20滴",
+          "speed": "快",
+          "colorLayer": "四层，偏暖",
+          "sediment": "中",
+          "sedimentLevel": 2,
+          "score": 82,
+          "baselineSeq": null,
+          "sedimentReduced": null,
+          "consecutiveLow": false,
+          "result": "待复磨",
+          "reason": "首次试磨评分未达85，进入待复磨队列"
+        },
+        {
+          "seq": 2,
+          "at": "2026-06-22T10:00:00.000Z",
+          "paper": "净皮纸",
           "water": "18滴",
           "speed": "中",
-          "colorLayer": "偏暖",
-          "sediment": "少",
-          "score": 79
+          "colorLayer": "四层，暖紫",
+          "sediment": "中",
+          "sedimentLevel": 2,
+          "score": 83,
+          "baselineSeq": 1,
+          "sedimentReduced": false,
+          "consecutiveLow": false,
+          "result": "待复磨",
+          "reason": "沉淀没有减少，继续留在待复磨队列"
         }
       ]
+    },
+    {
+      "id": "IS-003",
+      "code": "IS-003",
+      "smokeSource": "工业炭黑",
+      "glueRatio": "9%",
+      "ageYears": 1,
+      "storage": "试样盒A",
+      "status": "重点观察",
+      "createdAt": "2026-05-18T09:00:00.000Z",
+      "logs": [
+        {
+          "at": "2026-05-18T09:00:00.000Z",
+          "step": "建档",
+          "note": "墨锭建档，状态：待试磨"
+        },
+        {
+          "at": "2026-06-10T10:00:00.000Z",
+          "step": "试磨",
+          "note": "第1次：宣纸24滴，沉淀多，评分72 → 待复磨（评分未达85）",
+          "score": 72
+        },
+        {
+          "at": "2026-06-24T10:00:00.000Z",
+          "step": "试磨",
+          "note": "第2次：毛边纸22滴，沉淀中（较第1次减少），评分70 → 重点观察（连续两次低于75）",
+          "score": 70
+        }
+      ],
+      "tests": [
+        {
+          "seq": 1,
+          "at": "2026-06-10T10:00:00.000Z",
+          "paper": "宣纸",
+          "water": "24滴",
+          "speed": "慢",
+          "colorLayer": "三层，发灰",
+          "sediment": "多",
+          "sedimentLevel": 3,
+          "score": 72,
+          "baselineSeq": null,
+          "sedimentReduced": null,
+          "consecutiveLow": false,
+          "result": "待复磨",
+          "reason": "首次试磨评分未达85，进入待复磨队列"
+        },
+        {
+          "seq": 2,
+          "at": "2026-06-24T10:00:00.000Z",
+          "paper": "毛边纸",
+          "water": "22滴",
+          "speed": "慢",
+          "colorLayer": "三层，欠浓",
+          "sediment": "中",
+          "sedimentLevel": 2,
+          "score": 70,
+          "baselineSeq": 1,
+          "sedimentReduced": true,
+          "consecutiveLow": true,
+          "result": "重点观察",
+          "reason": "连续两次评分低于75，转重点观察"
+        }
+      ]
+    },
+    {
+      "id": "IS-004",
+      "code": "IS-004",
+      "smokeSource": "漆烟",
+      "glueRatio": "7%",
+      "ageYears": 5,
+      "storage": "恒湿柜A",
+      "status": "待试磨",
+      "createdAt": "2026-06-02T09:00:00.000Z",
+      "logs": [
+        {
+          "at": "2026-06-02T09:00:00.000Z",
+          "step": "建档",
+          "note": "墨锭建档，状态：待试磨"
+        }
+      ],
+      "tests": []
     }
   ]
 }
